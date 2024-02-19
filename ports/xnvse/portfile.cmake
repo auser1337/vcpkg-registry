@@ -1,3 +1,4 @@
+vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO auser1337/xNVSE
@@ -7,3 +8,6 @@ vcpkg_from_github(
 )
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
 vcpkg_cmake_install()
+
+file(INSTALL "${SOURCE_PATH}" DESTINATION "${CURRENT_PACKAGES_DIR}/debug/lib" FILES_MATCHING PATTERN "*.lib")
+file(INSTALL "${SOURCE_PATH}" DESTINATION "${CURRENT_PACKAGES_DIR}/lib" FILES_MATCHING PATTERN "*.lib")

@@ -1,0 +1,8 @@
+{
+  "default": {
+    "xnvse": {
+      "baseline": "6.3.5",
+      "port-version": 0
+    }
+  }
+}

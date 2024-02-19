@@ -3,7 +3,7 @@ vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO auser1337/xNVSE
         REF 4047dabc93520a5d74e112b23129a32f8996cbf3
-        SHA512 0
+        SHA512 e89f9888fc164cea7192b2d3d1265feda392a2468db98a157295685e7c5581ccc5b7bd73abbf691fab83b1b5d169dcfcb4c9ea6ff732f8b17d9452864024ab2c
         HEAD_REF master
 )
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")

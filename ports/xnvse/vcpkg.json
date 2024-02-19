@@ -10,6 +10,11 @@
       "name": "vcpkg-cmake",
       "version>=": "2023-05-04",
       "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "version>=": "2022-02-06",
+      "host": true
     }
   ]
 }
